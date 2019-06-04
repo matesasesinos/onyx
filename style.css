@@ -1,4 +1,12 @@
 @charset "utf-8";
+@font-face {
+  font-family: 'FuturaStd-Bold';
+  src: url('fonts/FuturaStd-Bold.eot?#iefix') format('embedded-opentype'),  url('fonts/FuturaStd-Bold.otf')  format('opentype'),
+	     url('fonts/FuturaStd-Bold.woff') format('woff'), url('fonts/FuturaStd-Bold.ttf')  format('truetype'), url('fonts/FuturaStd-Bold.svg#FuturaStd-Bold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* Onyx styles */
 /* bootstrap */
 .container{
@@ -39,12 +47,18 @@ body{
 	color: black;
 	font-weight: normal;
 }
+.onyx-title{
+	font-family: 'FuturaStd-Bold';
+}
 #login{
 	height: 75vh;
 	width: 100%;
 	display: flex;
 	justify-content: center;
 	align-items:center;
+}
+#login .onyx-title{
+	margin-bottom: 8%
 }
 input#sigin-btn {
     min-width: 100%;
