@@ -1,0 +1,79 @@
+@charset "utf-8";
+/* Onyx styles */
+/* bootstrap */
+.container{
+	max-width: 600px;
+}
+.btn{
+	padding: 12px 0;
+}
+.btn-primary{
+	background: black;
+	color: white;
+	border-radius: 20px;
+}
+.form-control{
+	border-radius: 20px;
+	border: 1px solid black;
+	padding: 22px 22px;
+}
+/* bootstrap */
+/* media queries */
+@media (min-width:600px){
+	#password-view {
+		right: 5%;
+	}
+}
+@media (max-width:360px){
+	#password-view {
+		right: 9%;
+	}
+}
+/* media queries */
+body,html{
+	height: 100%;
+}
+body{
+	 background-color: #e3e3e3;
+	font-family: Gotham, Helvetica Neue, "Helvetica", Arial, "sans-serif";
+	color: black;
+	font-weight: normal;
+}
+#login{
+	height: 75vh;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items:center;
+}
+input#sigin-btn {
+    min-width: 100%;
+}
+.password-input-form{
+	position: relative;
+}
+#password-view{
+	
+	background-size: contain;
+    color: black;
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    z-index: 15000;
+    top: 51%;
+	cursor: pointer
+}
+.password-view{
+	background: url('img/eye-regular.svg') no-repeat;
+}
+.password-no-view{
+	background: url('img/eye-slash-regular.svg') no-repeat;
+}
+.password-recovery {
+    padding-bottom: 3%;
+    color: black;
+}
+.password-recovery a{
+	font-weight: normal;
+	color: black;
+}
