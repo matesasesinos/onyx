@@ -1,124 +1,170 @@
 @charset "utf-8";
 @font-face {
-  font-family: 'FuturaStd-Bold';
-  src: url('fonts/FuturaStd-Bold.eot?#iefix') format('embedded-opentype'),  url('fonts/FuturaStd-Bold.otf')  format('opentype'),
-	     url('fonts/FuturaStd-Bold.woff') format('woff'), url('fonts/FuturaStd-Bold.ttf')  format('truetype'), url('fonts/FuturaStd-Bold.svg#FuturaStd-Bold') format('svg');
-  font-weight: normal;
-  font-style: normal;
+	font-family: 'FuturaStd-Bold';
+	src: url('fonts/FuturaStd-Bold.eot?#iefix') format('embedded-opentype'), url('fonts/FuturaStd-Bold.otf') format('opentype'),  url('fonts/FuturaStd-Bold.woff') format('woff'), url('fonts/FuturaStd-Bold.ttf') format('truetype'), url('fonts/FuturaStd-Bold.svg#FuturaStd-Bold') format('svg');
+	font-weight: normal;
+	font-style: normal;
 }
-
 /* Onyx styles */
 /* bootstrap */
-.container{
+.container {
 	max-width: 1080px;
 }
-.btn{
+.btn {
 	padding: 12px 0;
 }
-.btn-primary{
+.btn-primary {
 	background: black;
 	color: white;
 	border-radius: 20px;
 }
-.btn-light{
+.btn-light {
 	background: #ebebeb;
 	color: black;
 	border-radius: 20px;
 }
-.form-control{
+.form-control {
 	border-radius: 20px;
 	border: 1px solid black;
 	padding: 22px 22px;
 }
+
 /* bootstrap */
 /* media queries */
-@media (min-width:421px){
-	#password-view {
-		right: 5%;
-	}
+@media (min-width:421px) {
+#password-view {
+	right: 5%;
 }
-@media (max-width:420px){
-	#password-view {
-		right: 9%;
-	}
+}
+
+@media (max-width:420px) {
+#password-view {
+	right: 9%;
+}
 }
 /* media queries */
-body,html{
+body, html {
 	height: 100%;
 }
-body{
-	 background-color: #e3e3e3;
-	font-family: "Helvetica", sans-serif !important;
+body {
+	background-color: #e3e3e3;
+	font-family: 'Roboto', sans-serif;
 	color: black;
 	font-weight: normal;
+	text-rendering: optimizeLegibility;
 }
-.onyx-title{
+.onyx-title {
 	font-family: 'FuturaStd-Bold';
 }
 #login .onyx-title img {
-    max-height: 40px;
+	max-height: 40px;
 }
-#login{
+#login {
 	height: 100vh;
 	width: 100%;
 	display: flex;
 	justify-content: center;
-	align-items:center;
+	align-items: center;
 }
-#login .onyx-title{
+#login .onyx-title {
 	margin-bottom: 8%
 }
 input#sigin-btn {
-    min-width: 100%;
+	min-width: 100%;
 }
-.password-input-form{
+.password-input-form {
 	position: relative;
 }
-#password-view{
-	
+#password-view {
 	background-size: contain;
-    color: black;
-    width: 32px;
-    height: 32px;
-    position: absolute;
-    z-index: 15000;
-    top: 51%;
+	color: black;
+	width: 32px;
+	height: 32px;
+	position: absolute;
+	z-index: 15000;
+	top: 51%;
 	cursor: pointer
 }
-.password-view{
+.password-view {
 	background: url('img/eye-regular.svg') no-repeat;
 }
-.password-no-view{
+.password-no-view {
 	background: url('img/eye-slash-regular.svg') no-repeat;
 }
 .password-recovery {
-    padding-bottom: 5%;
-    color: black;
+	padding-bottom: 5%;
+	color: black;
 }
-.password-recovery a{
+.password-recovery a {
 	font-weight: normal;
 	color: black;
 	text-decoration: underline;
 }
 /* internas */
 .header {
-    padding: 5px 0;
+	padding: 5px 0;
 }
-.header a{
+.header a {
 	color: black;
 }
-.header .onyx-subtitle{
+.header .onyx-subtitle {
 	font-weight: 800;
 }
-#profile{
+#profile {
 	height: 75vh;
 	display: flex;
 	justify-content: center;
-	align-items:center;
+	align-items: center;
 }
 .buttons.col-12 a, .buttons.col-12 input[type="submit"] {
-    width: 100%;
+	width: 100%;
 }
 .buttons.fixed-bottom.col-12 {
-    padding-bottom: 5%;
+	padding-bottom: 5%;
+}
+.date-top {
+	margin-top: 3%;
+	margin-bottom: 3%;
+}
+#inspections {
+	margin-top: 5%;
+}
+.inspection {
+	max-width: 95%;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 5%;
+	padding-bottom: 5%;
+	margin-bottom: 3%;
+}
+.text-inspection {
+	margin-left: 0px;
+	padding-left: 0;
+}
+.inspection-hour {
+	font-weight: bold;
+}
+.inspection-hour .check-inspection .fa-circle {
+	color: #9b9b9b
+}
+.inspection-hour .check-inspection .fa-check-circle {
+	color: #8bc423;
+}
+.inspection-address {
+	font-size: 15px;
+	line-height: 19px;
+	padding-top: 3%;
+}
+.new {
+    position: relative;
+}
+a.new-link.rounded-circle.bg-dark {
+    background: black !important;
+    color: white;
+    width: 40px !important;
+    height: 40px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
