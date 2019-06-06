@@ -10,7 +10,7 @@
 /* Onyx styles */
 /* bootstrap */
 .container{
-	max-width: 600px;
+	max-width: 1080px;
 }
 .btn{
 	padding: 12px 0;
@@ -20,6 +20,11 @@
 	color: white;
 	border-radius: 20px;
 }
+.btn-light{
+	background: #ebebeb;
+	color: black;
+	border-radius: 20px;
+}
 .form-control{
 	border-radius: 20px;
 	border: 1px solid black;
@@ -27,12 +32,12 @@
 }
 /* bootstrap */
 /* media queries */
-@media (min-width:600px){
+@media (min-width:421px){
 	#password-view {
 		right: 5%;
 	}
 }
-@media (max-width:360px){
+@media (max-width:420px){
 	#password-view {
 		right: 9%;
 	}
@@ -50,8 +55,11 @@ body{
 .onyx-title{
 	font-family: 'FuturaStd-Bold';
 }
+#login .onyx-title img {
+    max-height: 40px;
+}
 #login{
-	height: 75vh;
+	height: 100vh;
 	width: 100%;
 	display: flex;
 	justify-content: center;
@@ -91,4 +99,26 @@ input#sigin-btn {
 	font-weight: normal;
 	color: black;
 	text-decoration: underline;
+}
+/* internas */
+.header {
+    padding: 5px 0;
+}
+.header a{
+	color: black;
+}
+.header .onyx-subtitle{
+	font-weight: 800;
+}
+#profile{
+	height: 75vh;
+	display: flex;
+	justify-content: center;
+	align-items:center;
+}
+.buttons.col-12 a, .buttons.col-12 input[type="submit"] {
+    width: 100%;
+}
+.buttons.fixed-bottom.col-12 {
+    padding-bottom: 5%;
 }
