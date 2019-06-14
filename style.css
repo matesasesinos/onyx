@@ -344,3 +344,33 @@ input#hour-cb {
     text-align: left !important;
     width: 60%;
 }
+#add-lookup-modal{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 150;
+	background: rgba(0, 0, 0, 0.7);
+    top: 0;
+}
+div#add-lookup-modal .container {
+    height: 100%;
+    padding: 9%;
+}
+div#form-add-lookup {
+    padding: 5%;
+    border-radius: 15px;
+    margin-top: 6%;
+}
+.col-12.header-lookup-add {
+    font-size: 18px;
+}
+form#form-add {
+    margin-top: 10%;
+}
+form#form-add .buttons {
+    margin-top: 25%;
+}
+.buttons.col-12 span{
+	width: 100%;
+	cursor: pointer;
+}
