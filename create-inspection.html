@@ -6,7 +6,6 @@
 <title>Onyx - Create Inspection</title>
 <link rel="stylesheet" href="vendor/twbs/bootstrap/dist/css/bootstrap.css">
 <link rel="stylesheet" href="vendor/components/font-awesome/css/fontawesome-all.css">
-<link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body id="create-inspection" class="bg-white">
@@ -21,7 +20,7 @@
         <input type="text" class="form-control" name="user" id="user" value="1424 Whitehall Boulevard..">
 		<div id="search-input-button"></div>
       </div>
-      <div class="form-group col-6 photo-input-form">
+      <div class="form-group col-5 photo-input-form">
         <label for="exampleInputPhoto">Photo </label><i class="fas fa-trash-alt float-right"></i>
 		<img src="img/house.jpeg" class="img-fluid img-create-inspection" alt="house" />
       </div>
@@ -30,23 +29,37 @@
         <select name="hour" id="hour" class="custom-select">
 			<option value="" selected>-- Select --</option>
 			<option value="">00:00</option>
-			<span class="now">Now</span> <span class="tgl"><input type="checkbox" checked data-toggle="toggle"></span>
 		</select>
+		  <div class="now-container">
+		  	  <span class="now">Now</span> 
+			  <span class="tgl">
+				  <label for="" class="tggl-on"><span class="tgl-white"></span><span class="tlg-black"></span></label>
+				  <input type="checkbox" checked value="1" id="hour-cb" data-toggle="toggle">
+			  </span>
+		  </div>
       </div>
 		<div class="clearfix"></div>
-      <div class="form-group col-12 email-input-form">
-        <label for="exampleInputEmail1">Email</label>
-        <input type="email" class="form-control" name="email" id="email" placeholder="User">
+      <div class="form-group col-12 client-input-form">
+        <label for="exampleInputClient">Client</label>
+        <select name="client" id="client" class="custom-select">
+			<option value="1" selected>John Doe</option>
+			<option value="">John Doe 2</option>
+			<option value="">John Doe 3</option>
+		</select>
       </div>
-      <div class="form-group col-12 phone-input-form">
-        <label for="exampleInputPhone1">Phone Number</label>
-        <input type="phone" class="form-control" name="phone" id="phone" placeholder="+45 8287 2312">
+	  <div class="form-group col-12 type-input-form">
+        <label for="exampleInputType">Type</label>
+        <select name="type" id="type" class="custom-select">
+			<option value="1" selected>House</option>
+			<option value="">APT</option>
+			<option value="">Other</option>
+		</select>
       </div>
       <div class="buttons fixed-bottom col-12">
         <div class="row justify-content-start">
           <div class="col-6"><a href="" class="btn btn-light">Cancel</a></div>
           <div class="col-6">
-            <input type="submit" value="Save" id="save-btn" class="btn btn-primary">
+            <input type="submit" value="Create" id="create-btn" class="btn btn-primary">
           </div>
         </div>
       </div>
@@ -56,7 +69,6 @@
 <!-- scripts --> 
 <script src="vendor/components/jquery/jquery.min.js"></script> 
 <script src="vendor/twbs/bootstrap/dist/js/bootstrap.js"></script>
-<script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

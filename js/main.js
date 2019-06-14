@@ -25,6 +25,32 @@
 			$('.menu-link').show('slow');
 		});
 	});
+	
+	$(document).ready(function(){
+		
+		if ($('input#hour-cb').is(':checked') && $('input#hour-cb').val(1)) {
+			$('span.tgl-white').show();
+			$('span.tlg-black').hide();
+		} else {
+			$('span.tgl-white').hide();
+			$('span.tlg-black').show();
+		}
+		
+		$('.tgl').on('click', function(){
+			if ($('input#hour-cb').is(':checked') && $('input#hour-cb').val(1)) {
+				$('span.tgl-white').show();
+				$('span.tlg-black').hide();
+				$('input#hour-cb').prop('checked', false);
+				$('input#hour-cb').val(0);
+			} else {
+				$('span.tgl-white').hide();
+				$('span.tlg-black').show();
+				$('input#hour-cb').prop('checked', true);
+				$('input#hour-cb').val(1);
+			}
+		});
+	});
+	
 	function readURL(input) {
             if (input.files && input.files[0]) {
                 var reader = new FileReader();

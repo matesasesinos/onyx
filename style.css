@@ -31,6 +31,7 @@
 .custom-select{
 	border-radius: 20px;
 	border: 1px solid black;
+	min-height: 46px;
 }
 /* bootstrap */
 /* media queries */
@@ -55,7 +56,10 @@ body {
 	color: black;
 	font-weight: normal;
 	text-rendering: optimizeLegibility;
+	
 }
+a{color: black}
+a:hover{text-decoration: none}
 .onyx-title {
 	font-family: 'FuturaStd-Bold';
 }
@@ -230,9 +234,113 @@ div#menu-reponsive ul li a i {
 .img-create-inspection{
 	border-radius: 10px;
 }
-.form-group.col-6.photo-input-form, .form-group.col-6.hour-input-form{
+.photo-input-form{
 	float: left;
+}
+.hour-input-form{
+	float: right;
 }
 .form-group.col-6.hour-input-form label {
     display: block;
+}
+.now-container {
+    margin-top: 16%;
+}
+span.now {
+    max-width: 50%;
+    display: block;
+    float: left;
+}
+span.tgl{
+	 max-width: 61%;
+    display: block;
+    float: right;
+    width: 72%;
+}
+label.tggl-on, label.tggl-off {
+    width: 100%;
+    border: 1px solid black;
+    height: 17px;
+    margin-top: 4px;
+	border-radius: 9px;
+	float: left;
+}
+span.tgl-white {
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    border: 1px solid black;
+    float: left
+}
+span.tlg-black {
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    border: 1px solid black;
+	background: black;
+	float: right;
+}
+input#hour-cb {
+    display: none;
+}
+/*/ content */
+.row.header-content.bg-white {
+    padding: 2% 0;
+	font-size: 14px;
+}
+.col-6.img-content {
+    padding-left: 0px !important;
+}
+.col-6.txt-content {
+    padding-left: 0;
+}
+.col-6.img-content img{
+	border-top-right-radius: 0.8rem !important;
+    border-bottom-right-radius: 0.8rem !important;
+}
+.txt-content strong{
+	display: block;
+}
+.txt-content .client{
+	margin-bottom: 5%;
+	display: block;
+}
+.btn-resume {
+    margin-top: 7%;
+}
+.header-body-content.col-12 {
+    padding: 4% 15px;
+}
+.content-option {
+    padding: 10px;
+	height: 70px;
+	display: flex;
+    align-items: center;
+	justify-content: space-around;
+	    margin-bottom: 6%;
+}
+.content-add{
+	border: solid 2px #979797;
+	color: #979797
+}
+.content-option span.check-inspection.float-right .fa-check-circle{
+	color: #8bc423;
+}
+.content-option span.check-inspection.float-right .fa-circle{
+	color: #9b9b9b;
+}
+.col-6.option.left {
+    padding-right: 5px;
+}
+.col-6.option.right {
+    padding-left: 5px;
+}
+.lookup-type {
+    width: 85%;
+}
+.lookup-type-t {
+    line-height: 15px;
+    padding-left: 8px;
+    text-align: left !important;
+    width: 60%;
 }
