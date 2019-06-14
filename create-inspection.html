@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Onyx - Create Inspection</title>
+<link rel="stylesheet" href="vendor/twbs/bootstrap/dist/css/bootstrap.css">
+<link rel="stylesheet" href="vendor/components/font-awesome/css/fontawesome-all.css">
+<link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body id="create-inspection" class="bg-white">
+<div class="container">
+  <div class="row header">
+    <div class="col-12 onyx-subtitle text-center"><a href="" class="back-link float-left"><i class="fas fa-long-arrow-alt-left"></i></a> Create Inspection</div>
+  </div>
+  <div class="row" id="create">
+    <form action=""  method="post" class="col-12">
+      <div class="form-group col-12 user-input-form">
+        <label for="exampleInputUser1">Address</label>
+        <input type="text" class="form-control" name="user" id="user" value="1424 Whitehall Boulevard..">
+		<div id="search-input-button"></div>
+      </div>
+      <div class="form-group col-6 photo-input-form">
+        <label for="exampleInputPhoto">Photo </label><i class="fas fa-trash-alt float-right"></i>
+		<img src="img/house.jpeg" class="img-fluid img-create-inspection" alt="house" />
+      </div>
+	  <div class="form-group col-6 hour-input-form">
+        <label for="exampleInputhour">Hour</label>
+        <select name="hour" id="hour" class="custom-select">
+			<option value="" selected>-- Select --</option>
+			<option value="">00:00</option>
+			<span class="now">Now</span> <span class="tgl"><input type="checkbox" checked data-toggle="toggle"></span>
+		</select>
+      </div>
+		<div class="clearfix"></div>
+      <div class="form-group col-12 email-input-form">
+        <label for="exampleInputEmail1">Email</label>
+        <input type="email" class="form-control" name="email" id="email" placeholder="User">
+      </div>
+      <div class="form-group col-12 phone-input-form">
+        <label for="exampleInputPhone1">Phone Number</label>
+        <input type="phone" class="form-control" name="phone" id="phone" placeholder="+45 8287 2312">
+      </div>
+      <div class="buttons fixed-bottom col-12">
+        <div class="row justify-content-start">
+          <div class="col-6"><a href="" class="btn btn-light">Cancel</a></div>
+          <div class="col-6">
+            <input type="submit" value="Save" id="save-btn" class="btn btn-primary">
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+<!-- scripts --> 
+<script src="vendor/components/jquery/jquery.min.js"></script> 
+<script src="vendor/twbs/bootstrap/dist/js/bootstrap.js"></script>
+<script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

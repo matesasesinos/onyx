@@ -28,7 +28,10 @@
 	border: 1px solid black;
 	padding: 22px 22px;
 }
-
+.custom-select{
+	border-radius: 20px;
+	border: 1px solid black;
+}
 /* bootstrap */
 /* media queries */
 @media (min-width:421px) {
@@ -84,6 +87,18 @@ input#sigin-btn {
 	z-index: 15000;
 	top: 51%;
 	cursor: pointer
+}
+#search-input-button {
+   background-size: contain;
+    color: black;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    z-index: 15000;
+    top: 57%;
+    cursor: pointer;
+    right: 9%;
+    background: url(img/search-solid.svg) no-repeat;
 }
 .password-view {
 	background: url('img/eye-regular.svg') no-repeat;
@@ -167,4 +182,57 @@ a.new-link.rounded-circle.bg-dark {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+/* menu */
+div#menu-reponsive {
+    width: 100%;
+    height: 100%;
+    background: white;
+    padding: 7% 7%;
+    z-index: 100;
+    position: absolute;
+}
+.header-menu {
+    margin-bottom: 10%;
+}
+span.close-button {
+    font-size: 1.5rem;
+}
+span.logo-menu img {
+    max-height: 20px;
+}
+div#menu-reponsive ul, div#menu-reponsive ul li{
+	list-style: none;
+}
+div#menu-reponsive ul {
+    padding-left: 5%;
+	font-size: 1.5rem;
+}
+div#menu-reponsive ul a{
+	color: black;
+}
+div#menu-reponsive ul li {
+    line-height: 2.5em;
+}
+div#menu-reponsive ul li a i{
+	margin-right: 1%
+}
+div#menu-reponsive ul li a i {
+    margin-right: 3%;
+}
+/* create */
+#create{
+	height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img-create-inspection{
+	border-radius: 10px;
+}
+.form-group.col-6.photo-input-form, .form-group.col-6.hour-input-form{
+	float: left;
+}
+.form-group.col-6.hour-input-form label {
+    display: block;
 }
