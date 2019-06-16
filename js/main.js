@@ -84,7 +84,8 @@
 		$('.close-add-modal').on('click', function () {
 			$('#add-item-modal').slideToggle();
 		});
-		$('#search-add').typeahead({
+		if($.isFunction(window.typeahead)){
+			$('#search-add').typeahead({
 			source: [{
 				id: 1,
 				name: 'Air'
@@ -116,7 +117,8 @@
 				id: 10,
 				name: 'Los Angeles'
 			}]
-		});
+		});	
+		}
 	});
 	//add item modal
 	$(document).ready(function(){
@@ -145,4 +147,16 @@
 		$(this).addClass('active');
 		$(tabc).removeClass("inactive-tab").addClass("active-tab").show();
 	});
+	//gallery report
+	$(document).ready(function(){
+      $('.gallery-report-items').slick({
+        	  slidesToShow: 3,
+			  slidesToScroll: 1,
+			  dots: false,
+			  centerMode: false,
+			  focusOnSelect: true,
+		  	  autoplay:true,
+		  	  arrows:false
+      });
+    });
 })(jQuery);

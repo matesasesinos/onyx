@@ -8,7 +8,7 @@
 /* Onyx styles */
 /* bootstrap */
 .container {
-	max-width: 1080px;
+	max-width: 768px;
 }
 .btn {
 	padding: 12px 0;
@@ -32,6 +32,12 @@
 	border-radius: 20px;
 	border: 1px solid black;
 	min-height: 46px;
+}
+.bg-dark{
+	background-color: black !important;
+}
+.bg-grey{
+	background-color: #ededed;
 }
 /* bootstrap */
 /* media queries */
@@ -589,4 +595,54 @@ form.form-tabs .form-group {
 .col-12.audio audio {
     width: 100%;
     margin: 1% 0;
+}
+/* report */
+.report-header{
+	line-height: 36px
+}
+a.add-report {
+    width: 100px;
+    padding: 5px 0;
+}
+.img-report {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.body-report{
+	border-bottom: 1px solid #dad7d7
+}
+.address-report {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #dad7d7;
+}
+.title-report {
+    font-size: 21px;
+    font-weight: bold;
+    padding: 15px 0;
+}
+.item-gallery{
+	padding: 5px;
+}
+.item-gallery img{
+	border-radius: 10px;
+}
+.table-report {
+    padding-left: 10%;
+    padding-right: 10%;
+	    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.table-report-inner{
+	background: #ededed;
+    border-radius: 10px;
+}
+.text-report {
+    margin-top: 2%;
+    margin-bottom: 2%;
+    padding: 0 7%;
+}
+.text-report .text-inner{
+	border-radius: 10px;
+	padding: 5%
 }
