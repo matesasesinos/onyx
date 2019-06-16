@@ -53,51 +53,96 @@
 
 	$(document).ready(function () {
 		$('#add-lookup-modal').hide();
-		$('.content-add').on('click', function(){
+		$('.content-add').on('click', function () {
 			$('#add-lookup-modal').slideToggle('fast');
 		});
-		$('.close-lookup-modal').on('click', function(){
+		$('.close-lookup-modal').on('click', function () {
 			$('#add-lookup-modal').slideToggle('fast');
 		});
-		
+
 		$('#edit-lookup-modal').hide();
-		$('.edit-lookup').on('click', function(){
+		$('.edit-lookup').on('click', function () {
 			$('#edit-lookup-modal').slideToggle('fast');
 		});
-		$('.close-lookup-edit-modal').on('click', function(){
+		$('.close-lookup-edit-modal').on('click', function () {
 			$('#edit-lookup-modal').slideToggle('fast');
 		});
 	});
-	$(document).ready(function(){
+	$(document).ready(function () {
 		$('#detail-modal').hide();
 		$('#add-item-modal').hide();
-		$('#resume-btn').on('click', function(){
+		$('#resume-btn').on('click', function () {
 			$('#detail-modal').slideToggle();
 		});
-		$('span.close-detail-link').on('click', function(){
+		$('span.close-detail-link').on('click', function () {
 			$('#detail-modal').slideToggle();
 		});
-		$('.detail-add-item').on('click', function(){
+		$('.detail-add-item').on('click', function () {
 			$('#add-item-modal').slideToggle();
 			$('#detail-modal').hide('fast');
 		});
-		$('.close-add-modal').on('click', function(){
+		$('.close-add-modal').on('click', function () {
 			$('#add-item-modal').slideToggle();
 		});
 		$('#search-add').typeahead({
-			source: [
-				{ id: 1, name: 'Air' },
-				{ id: 2, name: 'Air Conditioning' },
-				{ id: 3, name: 'Alarm' },
-				{ id: 4, name: 'Buffalo' },
-				{ id: 5, name: 'Boston' },
-				{ id: 6, name: 'Columbus' },
-				{ id: 7, name: 'Dallas' },
-				{ id: 8, name: 'Vancouver' },
-				{ id: 9, name: 'Seattle' },
-				{ id: 10, name: 'Los Angeles' }
-			]
+			source: [{
+				id: 1,
+				name: 'Air'
+			}, {
+				id: 2,
+				name: 'Air Conditioning'
+			}, {
+				id: 3,
+				name: 'Alarm'
+			}, {
+				id: 4,
+				name: 'Buffalo'
+			}, {
+				id: 5,
+				name: 'Boston'
+			}, {
+				id: 6,
+				name: 'Columbus'
+			}, {
+				id: 7,
+				name: 'Dallas'
+			}, {
+				id: 8,
+				name: 'Vancouver'
+			}, {
+				id: 9,
+				name: 'Seattle'
+			}, {
+				id: 10,
+				name: 'Los Angeles'
+			}]
 		});
-		
+	});
+	//add item modal
+	$(document).ready(function(){
+		$('#add-item-modal-add').hide();
+		$('.add-item-open-modal').on('click', function(){
+			$('#add-item-modal-add').slideToggle();
+			$('#add-item-modal').hide();
+		});
+		$('.open-add-item-modal').on('click', function(){
+			$('#add-item-modal').show();
+			$('#add-item-modal-add').slideToggle();
+		});
+		$('.close-add-item-link').on('click', function(){
+			$('#add-item-modal-add').slideToggle();
+		});
+	});
+	//add item tabs
+	$(document).ready(function () {
+		$(".tab-cont").addClass("inactive-tab");
+		$("#questions").removeClass("inactive-tab").addClass("active-tab").show();
+	});
+	$(document).on('click', '.tab-item', function () {
+		$(".tab-cont").removeClass("active-tab").addClass("inactive-tab").hide();
+		$('.tab-item').removeClass("active");
+		var tabc = $(this).data("toggle");
+		$(this).addClass('active');
+		$(tabc).removeClass("inactive-tab").addClass("active-tab").show();
 	});
 })(jQuery);

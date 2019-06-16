@@ -498,3 +498,95 @@ ul.typeahead.dropdown-menu li.active, ul.typeahead.dropdown-menu li:hover{
 ul.typeahead.dropdown-menu li {
     padding: 0 15px;
 }
+#add-item-modal-add{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 150;
+	background: rgba(0, 0, 0, 0.7);
+    top: 0;
+}
+#add-item-modal-add .container {
+  /*  height: 100%;*/
+}
+
+.back-arrow {
+    font-size: 35px;
+    width: 25%;
+    display: inline-block;
+    vertical-align: middle;
+}
+.lookup-type-detail.mini-title {
+    font-size: 14px;
+    width: 67%;
+    display: inline-block;
+}
+.type-item {
+    font-size: 18px;
+}
+span.save-add-item {
+    width: 100%;
+}
+.row.stars{
+	color: black;
+	border-top: 1px solid #eae9e9;
+	border-bottom: 1px solid #eae9e9;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.row.tabs-header {
+    font-size: 14px;
+    padding: 10px 0;
+}
+.row.tabs {
+    font-size: 12px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+	color: black;
+}
+.row.tabs-header .active{
+	font-weight: bold;
+}
+.active-tab{
+	display: block;
+}
+.inactive-tab{display: none}
+.row.tabs-content {
+    background: #e3e3e3;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 66vh;
+}
+form.form-tabs {
+    width: 100%;
+    display: block;
+}
+#camera,#mic{
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	font-size: 20px;
+	background: black;
+	color: white;
+	display: inline-block;
+	text-align: center;
+	border-radius: 100%;
+}
+form.form-tabs .form-group {
+    margin-bottom: 0.5rem;
+}
+#files img{
+	border-radius: 20px;
+}
+#files .item-img {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 2%;
+}
+.col-12.audio {
+    margin-top: 1%;
+}
+.col-12.audio audio {
+    width: 100%;
+    margin: 1% 0;
+}
