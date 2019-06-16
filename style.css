@@ -58,7 +58,7 @@ body {
 	text-rendering: optimizeLegibility;
 	
 }
-a{color: black}
+a, a:active, a:visited, a:focus{color: black}
 a:hover{text-decoration: none}
 .onyx-title {
 	font-family: 'FuturaStd-Bold';
@@ -308,10 +308,21 @@ input#hour-cb {
 .btn-resume {
     margin-top: 7%;
 }
+.btn-resume a {
+    color: white;
+}
 .header-body-content.col-12 {
     padding: 4% 15px;
 }
-.content-option {
+.content-option a{
+    padding: 10px;
+	height: 70px;
+	display: flex;
+    align-items: center;
+	justify-content: space-around;
+	    margin-bottom: 6%;
+}
+.content-option.content-add{
     padding: 10px;
 	height: 70px;
 	display: flex;
@@ -373,4 +384,117 @@ form#form-add .buttons {
 .buttons.col-12 span{
 	width: 100%;
 	cursor: pointer;
+}
+
+#edit-lookup-modal{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 150;
+	background: rgba(0, 0, 0, 0.7);
+    top: 0;
+}
+div#edit-lookup-modal .container {
+    height: 100%;
+    padding: 9%;
+}
+div#form-edit-lookup {
+    padding: 5%;
+    border-radius: 15px;
+    margin-top: 6%;
+}
+form#form-edit {
+    margin-top: 10%;
+}
+form#form-edit .buttons {
+    margin-top: 25%;
+}
+#detail-modal{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 150;
+	background: white;
+    top: 0;
+}
+.title-detail, .add-item-btn {
+    height: 100px;
+    text-align: left;
+    font-size: 20px;
+}
+.col-6.add-item-btn .btn {
+    width: 100%;
+}
+/* add */
+.option-content {
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    border: solid 1px #9b9b9b;
+    margin: 0px 2px;
+    text-align: center;
+    border-radius: 0.5rem;
+    text-transform: uppercase;
+    line-height: 25px;
+	color: #9b9b9b;
+}
+.option-active{
+	background: black;
+	color: white;
+}
+table#add-items .adds {
+    font-size: 12px;
+	cursor: pointer;
+}
+td.icon {
+    width: 12% !important;
+	cursor: pointer;
+}
+td.title {
+    width: 38%;
+    font-size: 14px;
+	cursor: pointer;
+}
+span.quititem {
+    width: 10px;
+    display: inline-block;
+    color: #9b9b9b;
+    padding: 0 5px;
+	font-weight: bold;
+	cursor: pointer;
+}
+table#add-items tr:first-child td {
+   border-top: 1px solid #979797;
+}
+#add-item-modal{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 150;
+	background: rgba(0, 0, 0, 0.7);
+    top: 0;
+}
+#add-item-modal .container {
+    height: 100%;
+    padding: 9%;
+}
+div#form-add-item {
+    padding: 5%;
+    border-radius: 15px;
+    margin-top: 6%;
+}
+form#form-add-item-modal {
+    width: 100%;
+    height: 60vh;
+    margin-top: 10%;
+}
+ul.typeahead.dropdown-menu{
+	line-height: 40px;
+	border: none
+}
+ul.typeahead.dropdown-menu li.active, ul.typeahead.dropdown-menu li:hover{
+	background: #ededed;
+}
+ul.typeahead.dropdown-menu li {
+    padding: 0 15px;
 }

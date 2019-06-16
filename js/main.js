@@ -2,7 +2,7 @@
 (function ($) {
 	"use strict";
 	$(document).ready(function () {
-		$('#password-view').on('click touchstart', function () {
+		$('#password-view').on('click', function () {
 			var pass = $('#password').attr('type');
 			if (pass === 'password') {
 				$('#password').attr('type', 'text');
@@ -16,11 +16,11 @@
 	});
 	$(document).ready(function () {
 		$('#menu-reponsive').hide();
-		$('.menu-link').on('click touchstart', function () {
+		$('.menu-link').on('click', function () {
 			$('#menu-reponsive').toggle('slide');
 			$(this).hide();
 		});
-		$('.close-button').on('click touchstart', function () {
+		$('.close-button').on('click', function () {
 			$('#menu-reponsive').hide('fast');
 			$('.menu-link').show('slow');
 		});
@@ -59,18 +59,45 @@
 		$('.close-lookup-modal').on('click', function(){
 			$('#add-lookup-modal').slideToggle('fast');
 		});
+		
+		$('#edit-lookup-modal').hide();
+		$('.edit-lookup').on('click', function(){
+			$('#edit-lookup-modal').slideToggle('fast');
+		});
+		$('.close-lookup-edit-modal').on('click', function(){
+			$('#edit-lookup-modal').slideToggle('fast');
+		});
 	});
-	/*
-	function readURL(input) {
-            if (input.files && input.files[0]) {
-                var reader = new FileReader();
-
-                reader.onload = function (e) {
-                    $('#photo')
-                        .attr('src', e.target.result);
-                };
-
-                reader.readAsDataURL(input.files[0]);
-            }
-        }*/
+	$(document).ready(function(){
+		$('#detail-modal').hide();
+		$('#add-item-modal').hide();
+		$('#resume-btn').on('click', function(){
+			$('#detail-modal').slideToggle();
+		});
+		$('span.close-detail-link').on('click', function(){
+			$('#detail-modal').slideToggle();
+		});
+		$('.detail-add-item').on('click', function(){
+			$('#add-item-modal').slideToggle();
+			$('#detail-modal').hide('fast');
+		});
+		$('.close-add-modal').on('click', function(){
+			$('#add-item-modal').slideToggle();
+		});
+		$('#search-add').typeahead({
+			source: [
+				{ id: 1, name: 'Air' },
+				{ id: 2, name: 'Air Conditioning' },
+				{ id: 3, name: 'Alarm' },
+				{ id: 4, name: 'Buffalo' },
+				{ id: 5, name: 'Boston' },
+				{ id: 6, name: 'Columbus' },
+				{ id: 7, name: 'Dallas' },
+				{ id: 8, name: 'Vancouver' },
+				{ id: 9, name: 'Seattle' },
+				{ id: 10, name: 'Los Angeles' }
+			]
+		});
+		
+	});
 })(jQuery);

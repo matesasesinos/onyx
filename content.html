@@ -18,59 +18,59 @@
     <div class="col-6 txt-content">
       <div class="client"> <strong>Client</strong> John Doe </div>
       <div class="address"> <strong>Address</strong> 1424 Whitehall Boulevard, Winter Springs, FL </div>
-      <div class="btn-resume"> <a href="" class="btn btn-primary btn-block">Resume</a> </div>
+      <div class="btn-resume"> <span class="btn btn-primary btn-block" id="resume-btn">Resume</span> </div>
     </div>
   </div>
   <div class="row" id="content">
     <div class="header-body-content col-12">
       <div class="row">
         <div class="col-8">House Content lookup </div>
-        <div class="col-4 text-right"><a href="#">Edit <i class="fas fa-edit"></i></a></div>
+        <div class="col-4 text-right"><span class="edit-lookup">Edit <i class="fas fa-edit"></i></span></div>
       </div>
     </div>
     <div class="lookup-body-content col-12">
       <div class="row">
         <div class="col-6 option left">
-          <div class="content-option bg-white rounded">
+          <div class="content-option bg-white rounded"> <a href="#" class="open-detail" data-id="id">
             <div class="lookup-type-i"> <i class="fas fa-fire"></i> </div>
             <div class="lookup-type-t"> Kitchen </div>
-            <span data-href="" class="check-inspection float-right"> <i class="fas fa-check-circle"></i> </span> </div>
+            <span data-href="" class="check-inspection float-right"> <i class="fas fa-check-circle"></i> </span> </a> </div>
         </div>
         <div class="col-6 option right">
-          <div class="content-option bg-white rounded">
+          <div class="content-option bg-white rounded"> <a href="#" class="open-detail" data-id="id">
             <div class="lookup-type-i"> <i class="fas fa-utensils"></i> </div>
             <div class="lookup-type-t"> Dining Room </div>
-            <span data-href="" class="check-inspection float-right"><i class="fas fa-circle"></i></span> </div>
+            <span data-href="" class="check-inspection float-right"><i class="fas fa-circle"></i></span> </a> </div>
         </div>
         <div class="col-6 option left">
-          <div class="content-option bg-white rounded">
+          <div class="content-option bg-white rounded"> <a href="#" class="open-detail" data-id="id">
             <div class="lookup-type-i"> <i class="fas fa-bed"></i> </div>
             <div class="lookup-type-t"> Master Bedroom </div>
-            <span data-href="" class="check-inspection float-right"> <i class="fas fa-circle"></i> </span> </div>
+            <span data-href="" class="check-inspection float-right"> <i class="fas fa-circle"></i> </span> </a> </div>
         </div>
         <div class="col-6 option right">
-          <div class="content-option bg-white rounded">
+          <div class="content-option bg-white rounded"> <a href="#" class="open-detail" data-id="id">
             <div class="lookup-type-i"> <i class="fas fa-bath"></i> </div>
             <div class="lookup-type-t"> Master Bathroom </div>
-            <span data-href="" class="check-inspection float-right"><i class="fas fa-circle"></i></span> </div>
+            <span data-href="" class="check-inspection float-right"><i class="fas fa-circle"></i></span> </a> </div>
         </div>
         <div class="col-6 option left">
-          <div class="content-option bg-white rounded">
+          <div class="content-option bg-white rounded"> <a href="#" class="open-detail" data-id="id">
             <div class="lookup-type-i"> <i class="fas fa-desktop"></i> </div>
             <div class="lookup-type-t"> Office </div>
-            <span data-href="" class="check-inspection float-right"> <i class="fas fa-circle"></i> </span> </div>
+            <span data-href="" class="check-inspection float-right"> <i class="fas fa-circle"></i> </span> </a> </div>
         </div>
         <div class="col-6 option right">
-          <div class="content-option bg-white rounded">
+          <div class="content-option bg-white rounded"> <a href="#" class="open-detail" data-id="id">
             <div class="lookup-type-i"> <i class="fas fa-car"></i> </div>
             <div class="lookup-type-t"> Garage </div>
-            <span data-href="" class="check-inspection float-right"><i class="fas fa-check-circle"></i></span> </div>
+            <span data-href="" class="check-inspection float-right"><i class="fas fa-check-circle"></i></span> </a> </div>
         </div>
         <div class="col-6 option left">
-          <div class="content-option bg-white rounded">
+          <div class="content-option bg-white rounded"> <a href="#" class="open-detail" data-id="id">
             <div class="lookup-type-i"> <i class="fas fa-bed"></i> </div>
             <div class="lookup-type-t"> Bedroom </div>
-            <span data-href="" class="check-inspection float-right"> <i class="fas fa-circle"></i> </span> </div>
+            <span data-href="" class="check-inspection float-right"> <i class="fas fa-circle"></i> </span> </a> </div>
         </div>
         <div class="col-6 option right">
           <div class="content-option content-add rounded">
@@ -113,9 +113,132 @@
     </div>
   </div>
 </div>
+<div id="edit-lookup-modal">
+  <div class="container">
+    <div class="row bg-white" id="form-edit-lookup">
+      <div class="col-12 header-lookup-add">Edit template lookup <span class="text-righ float-right close-lookup-edit-modal"><i class="fas fa-times"></i></span></div>
+      <form action="" class="col-12" id="form-edit" method="post">
+        <div class="row">
+          <div class="form-group col-12 type-input-form">
+            <label for="exampleInputType">Type</label>
+            <select name="type" id="type2" class="custom-select">
+              <option value="1" selected>House</option>
+              <option value="">APT</option>
+              <option value="">Other</option>
+            </select>
+          </div>
+          <div class="buttons col-12">
+            <div class="row justify-content-start">
+              <div class="col-6"><span class="btn btn-light close-lookup-edit-modal">Cancel</span></div>
+              <div class="col-6">
+                <input type="submit" value="Save" id="save2-btn" class="btn btn-primary">
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+<div id="detail-modal">
+  <div class="container">
+    <div class="row header bg-white">
+      <div class="col-12 onyx-subtitle text-center"><span class="close-detail-link float-left"><i class="fas fa-times"></i></span> 1424 Whitehall Boulevard, Win..</div>
+      <div class="detail-view col-12">
+        <div class="row header-detail-info">
+          <div class="col-6 title-detail  d-flex align-items-center">
+            <div class="lookup-type-detail"><i class="fas fa-fire"></i> Kitchen </div>
+          </div>
+          <div class="col-6 add-item-btn  d-flex align-items-center"> <span class="detail-add-item btn btn-light">Add item <i class="fas fa-plus"></i></span> </div>
+        </div>
+		  <div class="items-details-group">
+			  <div class="table-responsive">
+				  <table class="table" id="add-items">
+				  	<tr>
+					  <td class="icon"></td>
+					  <td class="title">General</td>
+					  <td class="adds"><span class="in option-content">in</span><span class="ni option-content">ni</span><span class="no option-content">no</span><span class="rr option-content">rr</span><span class="quititem"><i class="fas fa-times"></i></span></td>
+					</tr>
+					<tr>
+					  <td class="icon"><i class="fas fa-check"></i></td>
+					  <td class="title">Air Conditioning</td>
+					  <td class="adds"><span class="in option-content option-active">in</span><span class="ni option-content">ni</span><span class="no option-content">no</span><span class="rr option-content">rr</span><span class="quititem"><i class="fas fa-times"></i></span></td>
+					</tr>
+					  <tr>
+					  <td class="icon"><i class="fas fa-check"></i></td>
+					  <td class="title">Alarm</td>
+					  <td class="adds"><span class="in option-content option-active">in</span><span class="ni option-content">ni</span><span class="no option-content">no</span><span class="rr option-content">rr</span><span class="quititem"><i class="fas fa-times"></i></span></td>
+					</tr>
+					  <tr>
+					  <td class="icon"><i class="fas fa-check"></i></td>
+					  <td class="title">Baluster</td>
+					  <td class="adds"><span class="in option-content">in</span><span class="ni option-content">ni</span><span class="no option-content">no</span><span class="rr option-content">rr</span><span class="quititem"><i class="fas fa-times"></i></span></td>
+					</tr>
+					  <tr>
+					  <td class="icon"></td>
+					  <td class="title">Alarm</td>
+					  <td class="adds"><span class="in option-content">in</span><span class="ni option-content">ni</span><span class="no option-content">no</span><span class="rr option-content">rr</span><span class="quititem"><i class="fas fa-times"></i></span></td>
+					</tr>
+					   <tr>
+					  <td class="icon"></td>
+					  <td class="title">Baluster</td>
+					  <td class="adds"><span class="in option-content">in</span><span class="ni option-content">ni</span><span class="no option-content">no</span><span class="rr option-content option-active">rr</span><span class="quititem"><i class="fas fa-times"></i></span></td>
+					</tr>
+					 <tr>
+					  <td class="icon"></td>
+					  <td class="title">Bath side panel</td>
+					  <td class="adds"><span class="in option-content">in</span><span class="ni option-content">ni</span><span class="no option-content">no</span><span class="rr option-content">rr</span><span class="quititem"><i class="fas fa-times"></i></span></td>
+					</tr>
+					  <tr>
+					  <td class="icon"></td>
+					  <td class="title">Basin</td>
+					  <td class="adds"><span class="in option-content">in</span><span class="ni option-content">ni</span><span class="no option-content">no</span><span class="rr option-content">rr</span><span class="quititem"><i class="fas fa-times"></i></span></td>
+					</tr>
+					  <tr>
+					  <td class="icon"></td>
+					  <td class="title">Banister Post</td>
+					  <td class="adds"><span class="in option-content">in</span><span class="ni option-content">ni</span><span class="no option-content">no</span><span class="rr option-content">rr</span><span class="quititem"><i class="fas fa-times"></i></span></td>
+					</tr>
+					  <tr>
+					  <td class="icon"></td>
+					  <td class="title">Basin</td>
+					  <td class="adds"><span class="in option-content">in</span><span class="ni option-content">ni</span><span class="no option-content">no</span><span class="rr option-content">rr</span><span class="quititem"><i class="fas fa-times"></i></span></td>
+					</tr>
+				  </table>
+				  <div class="buttons col-12">
+					<div class="row justify-content-start">
+					  <div class="col-6"><span class="btn btn-light close-lookup-edit-modal">Cancel</span></div>
+					  <div class="col-6">
+						<input type="submit" value="Save" id="save2-add-item" class="btn btn-primary">
+					  </div>
+					</div>
+				  </div>
+			  </div>
+		  </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="add-item-modal">
+  <div class="container">
+    <div class="row bg-white" id="form-add-item">
+      <div class="col-12 header-lookup-add">Add item <span class="text-righ float-right close-add-modal"><i class="fas fa-times"></i></span></div>
+      <form action="" id="form-add-item-modal" method="post">
+        <div class="col-12">
+          <div class="form-group type-input-form">
+            <label for="exampleInputSearch">Search</label>
+           	<input type="text" value="" name="search-add" id="search-add" class="form-control" placeholder="Air...">
+			<div id="search-input-button"></div>  
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
 <!-- scripts --> 
 <script src="vendor/components/jquery/jquery.min.js"></script> 
 <script src="vendor/twbs/bootstrap/dist/js/bootstrap.js"></script> 
+<script src="js/bootstrap-typeahead.min.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>
