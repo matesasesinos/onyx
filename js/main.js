@@ -159,4 +159,13 @@
 		  	  arrows:false
       });
     });
+	$(document).ready(function(){
+		$('#new-report-modal').hide();
+		$('.add-report').on('click', function(){
+			$('#new-report-modal').slideToggle();
+		});
+		$('.close-new-report-modal').on('click', function(){
+			$('#new-report-modal').slideToggle();
+		});
+	});
 })(jQuery);

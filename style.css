@@ -600,7 +600,7 @@ form.form-tabs .form-group {
 .report-header{
 	line-height: 36px
 }
-a.add-report {
+.add-report {
     width: 100px;
     padding: 5px 0;
 }
@@ -645,4 +645,51 @@ a.add-report {
 .text-report .text-inner{
 	border-radius: 10px;
 	padding: 5%
+}
+div#new-report-modal {
+    position: fixed;
+    z-index: 1500;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    height: 100%;
+    top: 0;
+}
+div#new-report-modal{
+	padding: 9%;
+}
+div#form-add-report-row{
+	padding: 5%;
+    border-radius: 15px;
+    margin-top: 6%;
+}
+form#new-report {
+    width: 100%;
+    margin-top: 10%;
+}
+.form-group.float-button {
+    position: relative;
+}
+div#delete-input-button {
+    background-size: contain;
+    color: black;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    z-index: 15000;
+    top: 57%;
+    cursor: pointer;
+    right: 9%;
+    background: url(img/trash-alt-solid.svg) no-repeat;
+}
+div#add-input-button {
+    background-size: contain;
+    color: black;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    z-index: 15000;
+    top: 57%;
+    cursor: pointer;
+    right: 9%;
+    background: url(img/plus-solid.svg) no-repeat;
 }
